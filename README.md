@@ -1,2 +1,2 @@
 # MyVector
- My realization ov standard method vector
+ My realization of standard method vector
