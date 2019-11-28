@@ -1,19 +1,20 @@
-#include <iostream>
 #include "myvector.h"
+#include <vector>
+#include <cmath>
 
-using namespace std;
 
 int main()
 {
-    MyVector c(20);
-    int s{0};
-    for(int i=0; i<20; ++i)
+    MyVector a {1,2,3,4,5};
+    MyVector b {10,9,8,7,6,5,4,3,2};
+    for (unsigned long long i=0; i<b.size(); ++i)
     {
-        c.set(i,i*i*i);
+        cout<<b[i]<<endl;
     }
-    for(int i=0; i<19; ++i)
+    b = a;
+    for (unsigned long long i=0; i<b.size(); ++i)
     {
-        c.set(i,c.get(i)+c.get(i+1));
-        cout<<c.get(i)<<endl;
+        cout<<b[i]<<endl;
     }
 }
+
