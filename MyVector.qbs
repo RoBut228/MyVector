@@ -4,7 +4,6 @@ CppApplication {
     consoleApplication: true
     files: [
         "main.cpp",
-        "myvector.cpp",
         "myvector.h",
     ]
 
